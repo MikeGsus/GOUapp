@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Universidades Renovadas</string>
+    <string name="action_settings">Settings</string>
+    <string name="uni">UNIVERSIDADES</string>
+    <string name="gal">GALERÍA Y NOTICIAS</string>
+    <string name="inf">INFORMACIÓN</string>
+    <string name="doc">MANUALES</string>
+    <string name="ut">UNIVERSIDAD TECNOLÓGICA DE TABASCO</string>
+    <string name="title_activity_uni">UniActivity</string>
+    <string name="section_format">Universidad %1$d</string>
+    <string name="title_activity_universidad">Universidad</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
