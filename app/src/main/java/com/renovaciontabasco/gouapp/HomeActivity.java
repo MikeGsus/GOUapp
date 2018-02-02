@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.renovaciontabasco.gouapp.galeria.FullscreenActivity;
 import com.renovaciontabasco.gouapp.univ.UniversidadesActivity;
 
 public class HomeActivity extends AppCompatActivity {
@@ -61,6 +62,11 @@ public class HomeActivity extends AppCompatActivity {
 
     public void openUni(View view){
         Intent intent = new Intent(this, UniversidadesActivity.class);
+        startActivity(intent);
+    }
+
+    public void openGal(View view){
+        Intent intent = new Intent(this, GaleriaActivity.class);
         startActivity(intent);
     }
 
