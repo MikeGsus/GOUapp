@@ -1,9 +1,9 @@
 package com.renovaciontabasco.gouapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.renovaciontabasco.gouapp.galeria.FullscreenActivity;
 import com.renovaciontabasco.gouapp.univ.UniversidadesActivity;
 
 public class HomeActivity extends AppCompatActivity {
@@ -30,8 +29,7 @@ public class HomeActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Contacto", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                enviaMensajeWhatsApp();
             }
         });
 
@@ -68,6 +66,18 @@ public class HomeActivity extends AppCompatActivity {
     public void openGal(View view){
         Intent intent = new Intent(this, GaleriaActivity.class);
         startActivity(intent);
+    }
+
+    public void openInfo(View view){
+        Intent intent = new Intent(this, InformationActivity.class);
+        startActivity(intent);
+    }
+
+    public void enviaMensajeWhatsApp() {
+        Uri mUri = Uri.parse("smsto:9931727567");
+        Intent mIntent = new Intent(Intent.ACTION_SENDTO, mUri);
+        mIntent.setPackage("com.whatsapp");
+        startActivity(mIntent);
     }
 
 }

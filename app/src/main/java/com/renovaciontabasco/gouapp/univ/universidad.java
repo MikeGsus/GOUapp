@@ -1,10 +1,8 @@
 package com.renovaciontabasco.gouapp.univ;
 
-import android.content.ClipData;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -31,6 +29,7 @@ public class universidad extends AppCompatActivity {
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
     static int codigo;
+    static String numero;
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -57,8 +56,7 @@ public class universidad extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                enviaMensajeWhatsApp(numero);
             }
         });
 
@@ -121,6 +119,7 @@ public class universidad extends AppCompatActivity {
                    return damc;
                case 6:
                    damj damj = new damj();
+                   numero = "9932841818";
                    return damj;
                case 7:
                    itech itech = new itech();
@@ -139,6 +138,7 @@ public class universidad extends AppCompatActivity {
                    return upn;
                case 12:
                    uttab uttab = new uttab();
+                   numero = "9932347482";
                    return uttab;
                default:
                    return null;
@@ -151,18 +151,13 @@ public class universidad extends AppCompatActivity {
             return 13;
         }
 
-        /*@Override
-        public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return "SECTION 1";
-                case 1:
-                    return "SECTION 2";
-                case 2:
-                    return "SECTION 3";
-            }
-            return null;
-        }*/
+    }
+
+    public void enviaMensajeWhatsApp(String num) {
+        Uri mUri = Uri.parse("smsto:"+num);
+        Intent mIntent = new Intent(Intent.ACTION_SENDTO, mUri);
+        mIntent.setPackage("com.whatsapp");
+        startActivity(mIntent);
     }
 
     public static void onActivityResult(int codigo1){

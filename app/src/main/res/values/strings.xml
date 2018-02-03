@@ -16,4 +16,27 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="large_text">
+        "¿QUIÉNES SOMOS?\n\n"
+
+        "Somos estudiantes, profesores y funcionarios de diversas facultades de Latinoamérica que responden, de una manera renovada, a los crecientes desafíos propuestos por la Iglesia Católica Apostólica y Romana, como lo es la Evangelización en las Universidades.\n\n"
+
+        "El GOU es un espacio de oración en comunidad en que se experimentan los carismas del Espíritu Santo. Su objetivo es llevar a todos sus miembros a experimentar el pentecostés personal. El Grupo de Oración lleva a sus participantes a conocer y experimentar la salvación de Dios, a vivir la santificación y salir para la misión, experimentando el Espíritu Santo en sus vidas.\n\n"
+
+        "Los GOUs deben de proporcionar:
+            1) Transformación de vida.
+            2) Reavivamiento de fe en cada corazón.
+            3) Despertar en todos la importancia vital de la oración personal.\n\n"
+
+        "¿Quiénes pueden participar?\nTodos pueden participar en el GOU, independientemente de tener vínculo con una facultad/universidad, pues Jesús viene y acoge a todos, principalmente aquellos y aquellas que lo buscan incesantemente. \n\n"
+
+        "¿CÓMO Y DÓNDE PUEDE OCURRIR EL GOU?\nLas reuniones de oración pueden ocurrir en cualquier lugar de la facultad: un salón, los pasillos, el campo, etc.\nEl GOU puede ocurrir de diversas maneras, pero lo más importante es la oración: rezar y pedir a Dios que abra las oportunidades de evangelización en el ambiente específico (la universidad). \n\n"
+
+        "¿COMO NACE UN GOU?\mA partir de una experiencia profunda con JESÚS vivo y resucitado, y es a partir de ello que los universitarios pasan a SOÑAR con un mundo nuevo.\n\n"
+
+        "Secretaría Latinoamericana de Jóvenes RCC"
+
+        "\nUniversidades Renovadas Latinoamérica"
+    </string>
 </resources>
