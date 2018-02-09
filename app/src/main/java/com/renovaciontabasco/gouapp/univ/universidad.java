@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.renovaciontabasco.gouapp.R;
+import com.renovaciontabasco.gouapp.UbiActivity;
 
 public class universidad extends AppCompatActivity {
 
@@ -57,6 +58,14 @@ public class universidad extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 enviaMensajeWhatsApp(numero);
+            }
+        });
+
+        FloatingActionButton tomap = (FloatingActionButton) findViewById(R.id.ToMap);
+        tomap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mostrarMapa();
             }
         });
 
@@ -158,6 +167,11 @@ public class universidad extends AppCompatActivity {
         Intent mIntent = new Intent(Intent.ACTION_SENDTO, mUri);
         mIntent.setPackage("com.whatsapp");
         startActivity(mIntent);
+    }
+
+    public void mostrarMapa(){
+        Intent intent = new Intent(this, UbiActivity.class);
+        startActivity(intent);
     }
 
     public static void onActivityResult(int codigo1){

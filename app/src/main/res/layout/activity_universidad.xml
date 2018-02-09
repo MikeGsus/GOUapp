@@ -42,4 +42,15 @@
         app:backgroundTint="?attr/colorPrimary"
         app:srcCompat="@android:drawable/sym_action_chat" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ToMap"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="?attr/colorPrimary"
+        app:layout_anchor="@+id/fab"
+        app:layout_anchorGravity="top|center"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
 </android.support.design.widget.CoordinatorLayout>
