@@ -51,6 +51,6 @@
         app:backgroundTint="?attr/colorPrimary"
         app:layout_anchor="@+id/fab"
         app:layout_anchorGravity="top|center"
-        app:srcCompat="@android:drawable/ic_dialog_map" />
+        app:srcCompat="@mipmap/iconlocation" />
 
 </android.support.design.widget.CoordinatorLayout>
