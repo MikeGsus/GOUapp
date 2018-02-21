@@ -59,7 +59,7 @@ public class UbiActivity extends FragmentActivity implements OnMapReadyCallback 
         UiSettings uiSettings = mMap.getUiSettings();
         uiSettings.setZoomControlsEnabled(true);
         // Add a marker in Sydney and move the camera
-        LatLng locUniv = new LatLng(117.884516234124536,-92.92358636856079);
+        LatLng locUniv = new LatLng(18.00734548174369,-92.92377948760986);
         mMap.addMarker(new MarkerOptions().position(locUniv).title("Universidad"));
         float zoomlevel = 16;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(locUniv,zoomlevel));
