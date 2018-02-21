@@ -21,21 +21,21 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:layout_height="160dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="82dp"
                     android:layout_height="113dp"
-                    app:srcCompat="@mipmap/logouttab" />
+                    app:srcCompat="@mipmap/logo_itss" />
 
                 <TextView
                     android:id="@+id/section_label"
                     android:layout_width="278dp"
                     android:layout_height="match_parent"
-                    android:text="ITSS"
                     android:gravity="center"
+                    android:text="INSTITUTO TECNOLÓGICO SUPERIOR \nDE LA \nREGIÓN SIERRA"
                     android:textColor="#fff"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -45,53 +45,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="168dp"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/lugar"
-                    android:layout_width="match_parent"
-                    android:layout_height="54dp"
-                    android:text='Lugar: Biblioteca "José Francisco Fuentes Esperon"'
-                    android:textColor="#fff"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/hora"
-                    android:layout_width="match_parent"
-                    android:layout_height="38dp"
-                    android:text='Horario: Jueves 3:15 pm'
-                    android:textColor="#fff"
-                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/ecargado"
                     android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:text='Encargado: Alexander Sauz Hernández'
+                    android:layout_height="62dp"
+                    android:text='Encargado: Alec Eduardo Hernández Cornelio'
                     android:textColor="#fff"
                     android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/participantes"
-                    android:layout_width="match_parent"
-                    android:layout_height="41dp"
-                    android:text='Número de participantes: 10'
-                    android:textColor="#fff"
-                    android:textSize="18sp" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <com.google.android.gms.maps.MapView
-                    android:id="@+id/mapView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="163dp"
-                    android:layout_weight="1" />
             </LinearLayout>
 
         </LinearLayout>

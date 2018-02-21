@@ -110,15 +110,18 @@ public class universidad extends AppCompatActivity {
             switch (position){
                case 0:
                    daca daca = new daca();
+                   numero = "9361147805";
                    return daca;
                case 1:
                    dacs dacs = new dacs();
+                   numero = "9932214908";
                    return dacs;
                case 2:
                    dacsyh dacsyh = new dacsyh();
                    return dacsyh;
                case 3:
                    daea daea = new daea();
+                   numero = "9932204328";
                    return daea;
                case 4:
                    daia daia = new daia();
@@ -138,9 +141,11 @@ public class universidad extends AppCompatActivity {
                    return itsce;
                case 9:
                    itss itss = new itss();
+                   numero = "9321107850";
                    return itss;
                case 10:
                    itvh itvh = new itvh();
+                   numero = "9931599997";
                    return itvh;
                case 11:
                    upn upn = new upn();

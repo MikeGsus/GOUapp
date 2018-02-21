@@ -27,13 +27,14 @@
                     android:id="@+id/imageView"
                     android:layout_width="82dp"
                     android:layout_height="113dp"
+                    android:src="@mipmap/logo_dacs"
                     />
 
                 <TextView
                     android:id="@+id/section_label"
                     android:layout_width="278dp"
                     android:layout_height="match_parent"
-                    android:text="DACS"
+                    android:text="DIVISIÓN \nACADEMICA \nDE CIENCIAS \nDE LA SALUD"
                     android:gravity="center"
                     android:textColor="#fff"
                     android:textSize="24sp"
@@ -47,19 +48,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <TextView
-                    android:id="@+id/lugar"
-                    android:layout_width="match_parent"
-                    android:layout_height="54dp"
-                    android:text='Lugar: Biblioteca "José Francisco Fuentes Esperon"'
-                    android:textColor="#fff"
-                    android:textSize="18sp" />
+
 
                 <TextView
                     android:id="@+id/hora"
                     android:layout_width="match_parent"
                     android:layout_height="38dp"
-                    android:text='Horario: Jueves 3:15 pm'
+                    android:text='Horario: Lunes 1:00 pm, Jueves 2:00 pm'
                     android:textColor="#fff"
                     android:textSize="18sp" />
 
@@ -67,7 +62,7 @@
                     android:id="@+id/ecargado"
                     android:layout_width="match_parent"
                     android:layout_height="36dp"
-                    android:text='Encargado: Alexander Sauz Hernández'
+                    android:text='Encargada: Diana Alejandra Hernández'
                     android:textColor="#fff"
                     android:textSize="18sp" />
 
@@ -75,23 +70,12 @@
                     android:id="@+id/participantes"
                     android:layout_width="match_parent"
                     android:layout_height="41dp"
-                    android:text='Número de participantes: 10'
+                    android:text='Número de participantes: 21'
                     android:textColor="#fff"
                     android:textSize="18sp" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <com.google.android.gms.maps.MapView
-                    android:id="@+id/mapView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="163dp"
-                    android:layout_weight="1" />
-            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
