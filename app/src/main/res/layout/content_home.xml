@@ -8,22 +8,37 @@
     tools:context="com.renovaciontabasco.gouapp.HomeActivity"
     tools:showIn="@layout/activity_home">
 
-    <Button
+    <ImageView
         android:id="@+id/uni"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/uni"
         android:onClick="openUni"
         android:text="@string/uni"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/b_univ" />
 
-    <Button
+    <ImageView
+        android:id="@+id/inf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/inf"
+        android:onClick="openInfo"
+        android:text="@string/inf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uni"
+        app:srcCompat="@mipmap/b_inf" />
+
+    <!--<Button
         android:id="@+id/gal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -36,22 +51,7 @@
         android:onClick="openGal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uni" />
-
-    <Button
-        android:id="@+id/inf"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/inf"
-        android:onClick="openInfo"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gal" />
+        app:layout_constraintTop_toBottomOf="@+id/uni2" />-->
 
     <!--
     <Button

@@ -104,7 +104,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bDamc"
-                app:srcCompat="@mipmap/m_ut" />
+                app:srcCompat="@mipmap/b_damj" />
 
             <ImageView
                 android:id="@+id/bItech"
@@ -116,7 +116,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bDamj"
-                app:srcCompat="@mipmap/m_ut" />
+                app:srcCompat="@mipmap/b_itech" />
 
             <ImageView
                 android:id="@+id/bItsce"
@@ -128,7 +128,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bItech"
-                app:srcCompat="@mipmap/m_ut" />
+                app:srcCompat="@mipmap/b_itsce" />
 
             <ImageView
                 android:id="@+id/bItss"
@@ -140,7 +140,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bItsce"
-                app:srcCompat="@mipmap/m_ut" />
+                app:srcCompat="@mipmap/b_itss" />
 
             <ImageView
                 android:id="@+id/bItvh"
@@ -152,7 +152,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bItss"
-                app:srcCompat="@mipmap/m_ut" />
+                app:srcCompat="@mipmap/b_itvh" />
 
             <ImageView
                 android:id="@+id/bUpn"
@@ -164,7 +164,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bItvh"
-                app:srcCompat="@mipmap/m_ut" />
+                app:srcCompat="@mipmap/b_upn" />
 
             <ImageView
                 android:id="@+id/bUttab"

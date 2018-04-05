@@ -31,6 +31,9 @@ public class universidad extends AppCompatActivity {
     private SectionsPagerAdapter mSectionsPagerAdapter;
     static int codigo;
     static String numero;
+    public double longitud;
+    public double latitud;
+
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -71,29 +74,6 @@ public class universidad extends AppCompatActivity {
 
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.menu_universidad, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
@@ -111,20 +91,29 @@ public class universidad extends AppCompatActivity {
                case 0:
                    daca daca = new daca();
                    numero = "9361147805";
+                   latitud = 17.977018654063087;
+                   longitud = -92.9549789428711;
                    return daca;
                case 1:
                    dacs dacs = new dacs();
                    numero = "9932214908";
+                   latitud = 17.78571347947813;
+                   longitud = -92.95549392700195;
                    return dacs;
                case 2:
                    dacsyh dacsyh = new dacsyh();
+                   latitud = 18.00734548174369;
+                   longitud = -92.92377948760986;
                    return dacsyh;
                case 3:
                    daea daea = new daea();
                    numero = "9932204328";
+                   latitud = 18.01530387941711;
+                   longitud = -92.98652172088623;
                    return daea;
                case 4:
                    daia daia = new daia();
+
                    return daia;
                case 5:
                    damc damc = new damc();
@@ -153,6 +142,8 @@ public class universidad extends AppCompatActivity {
                case 12:
                    uttab uttab = new uttab();
                    numero = "9932347482";
+                   latitud = 17.809494877617688;
+                   longitud = -92.92571067810059;
                    return uttab;
                default:
                    return null;
@@ -176,6 +167,7 @@ public class universidad extends AppCompatActivity {
 
     public void mostrarMapa(){
         Intent intent = new Intent(this, UbiActivity.class);
+        UbiActivity.direccion(longitud,latitud);
         startActivity(intent);
     }
 

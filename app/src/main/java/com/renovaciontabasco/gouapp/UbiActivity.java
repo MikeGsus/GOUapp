@@ -17,6 +17,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class UbiActivity extends FragmentActivity implements OnMapReadyCallback {
 
+    static double longitud;
+    static double latitud;
+
     private GoogleMap mMap;
 
     @Override
@@ -40,6 +43,10 @@ public class UbiActivity extends FragmentActivity implements OnMapReadyCallback 
         mapFragment.getMapAsync(this);
     }
 
+    public static void direccion(double longi, double lat){
+        longitud = longi;
+        latitud = lat;
+    }
 
     /**
      * Manipulates the map once available.
@@ -58,8 +65,7 @@ public class UbiActivity extends FragmentActivity implements OnMapReadyCallback 
 
         UiSettings uiSettings = mMap.getUiSettings();
         uiSettings.setZoomControlsEnabled(true);
-        // Add a marker in Sydney and move the camera
-        LatLng locUniv = new LatLng(18.00734548174369,-92.92377948760986);
+        LatLng locUniv = new LatLng(latitud,longitud);
         mMap.addMarker(new MarkerOptions().position(locUniv).title("Universidad"));
         float zoomlevel = 16;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(locUniv,zoomlevel));
