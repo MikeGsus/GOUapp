@@ -50,10 +50,26 @@
 
 
                 <TextView
+                    android:id="@+id/lugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:text='Lugar: Aula F8'
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hora"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text='Horario: Miércoles 12:00 pm'
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
                     android:id="@+id/ecargado"
                     android:layout_width="match_parent"
                     android:layout_height="36dp"
-                    android:text='Encargado: Alexander Sauz Hernández'
+                    android:text='Encargada: Marcy Briceño'
                     android:textColor="#fff"
                     android:textSize="18sp" />
 

@@ -31,8 +31,8 @@ public class universidad extends AppCompatActivity {
     private SectionsPagerAdapter mSectionsPagerAdapter;
     static int codigo;
     static String numero;
-    public double longitud;
-    public double latitud;
+    static double longitud;
+    static double latitud;
 
 
     /**
@@ -90,88 +90,138 @@ public class universidad extends AppCompatActivity {
             switch (position){
                case 0:
                    daca daca = new daca();
-                   numero = "9361147805";
-                   latitud = 17.977018654063087;
-                   longitud = -92.9549789428711;
+                   pestañas();
                    return daca;
                case 1:
                    dacs dacs = new dacs();
-                   numero = "9932214908";
-                   latitud = 17.78571347947813;
-                   longitud = -92.95549392700195;
+                   pestañas();
                    return dacs;
-               case 2:
+               /*case 2:
                    dacsyh dacsyh = new dacsyh();
-                   latitud = 18.00734548174369;
-                   longitud = -92.92377948760986;
                    return dacsyh;
                case 3:
                    daea daea = new daea();
-                   numero = "9932204328";
-                   latitud = 18.01530387941711;
-                   longitud = -92.98652172088623;
                    return daea;
                case 4:
                    daia daia = new daia();
-
-                   return daia;
-               case 5:
+                   return daia;*/
+               case 2:
                    damc damc = new damc();
+                   pestañas();
                    return damc;
-               case 6:
+               case 3:
                    damj damj = new damj();
-                   numero = "9932841818";
+                   pestañas();
                    return damj;
-               case 7:
+               /*case 7:
                    itech itech = new itech();
                    return itech;
                case 8:
                    itsce itsce = new itsce();
-                   return itsce;
-               case 9:
+                   return itsce;*/
+               case 4:
                    itss itss = new itss();
-                   numero = "9321107850";
+                   pestañas();
                    return itss;
-               case 10:
+               case 5:
                    itvh itvh = new itvh();
-                   numero = "9931599997";
+                   pestañas();
                    return itvh;
-               case 11:
+               /*case 11:
                    upn upn = new upn();
-                   return upn;
-               case 12:
+                   return upn;*/
+               case 6:
                    uttab uttab = new uttab();
-                   numero = "9932347482";
-                   latitud = 17.809494877617688;
-                   longitud = -92.92571067810059;
+                   pestañas();
                    return uttab;
-               default:
-                   return null;
+                default:
+                    return null;
            }
         }
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 13;
+            // Show 7 total pages.
+            return 7;
         }
 
     }
 
     public void enviaMensajeWhatsApp(String num) {
-        Uri mUri = Uri.parse("smsto:"+num);
-        Intent mIntent = new Intent(Intent.ACTION_SENDTO, mUri);
-        mIntent.setPackage("com.whatsapp");
-        startActivity(mIntent);
+        for (int i = 0; i < 2; i++){
+            pestañas();
+            if (i == 1){
+                Uri mUri = Uri.parse("smsto:"+numero);
+                Intent mIntent = new Intent(Intent.ACTION_SENDTO, mUri);
+                mIntent.setPackage("com.whatsapp");
+                startActivity(mIntent);
+            }
+        }
     }
 
     public void mostrarMapa(){
-        Intent intent = new Intent(this, UbiActivity.class);
-        UbiActivity.direccion(longitud,latitud);
-        startActivity(intent);
+        for (int i = 0; i < 2; i++){
+            pestañas();
+            if (i == 1){
+                Intent intent = new Intent(this, UbiActivity.class);
+                UbiActivity.direccion(longitud,latitud);
+                startActivity(intent);
+            }
+        }
     }
 
     public static void onActivityResult(int codigo1){
         codigo = codigo1;
+    }
+
+    public static void pestañas(){
+        System.out.println(mViewPager.getCurrentItem());
+        numero = "";
+        latitud = 0;
+        longitud = 0;
+        try {
+            switch (mViewPager.getCurrentItem()){
+                case 0:
+                    numero = "9361147805";
+                    latitud = 17.572203;
+                    longitud = -92.956814;
+                    break;
+                case 1:
+                    numero = "9931727567";
+                    latitud = 17.975929;
+                    longitud = -92.953353;
+                    break;
+                case 2:
+                    numero = "9231093996";
+                    latitud = 18.226486;
+                    longitud = -93.231273;
+                    break;
+                case 3:
+                    numero = "9932841818";
+                    latitud = 18.178838;
+                    longitud = -93.043433;
+                    break;
+                case 4:
+                    numero = "9321107850";
+                    latitud = 17.546550;
+                    longitud = -92.911232;
+                    break;
+                case 5:
+                    numero = "9931599997";
+                    latitud = 18.022933;
+                    longitud = -92.903559;
+                    break;
+                case 6:
+                    numero = "9932617686";
+                    latitud = 17.884516234124536;
+                    longitud = -92.92358636856079;
+                    break;
+                default:
+                    break;
+            }
+        }catch (Exception error){
+            System.out.println(error);
+        }
+
     }
 }

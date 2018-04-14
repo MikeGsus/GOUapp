@@ -18,7 +18,7 @@ public class UniversidadesActivity extends AppCompatActivity {
 
     public void openUT(View view){
         Intent intent = new Intent(this, universidad.class);
-        universidad.onActivityResult(12);
+        universidad.onActivityResult(6);
         startActivity(intent);
     }
 
@@ -30,13 +30,13 @@ public class UniversidadesActivity extends AppCompatActivity {
 
     public void openItvh(View view){
         Intent intent = new Intent(this, universidad.class);
-        universidad.onActivityResult(10);
+        universidad.onActivityResult(5);
         startActivity(intent);
     }
 
     public void openItss(View view){
         Intent intent = new Intent(this, universidad.class);
-        universidad.onActivityResult(9);
+        universidad.onActivityResult(4);
         startActivity(intent);
     }
 
@@ -54,13 +54,13 @@ public class UniversidadesActivity extends AppCompatActivity {
 
     public void openDamj(View view){
         Intent intent = new Intent(this, universidad.class);
-        universidad.onActivityResult(6);
+        universidad.onActivityResult(3);
         startActivity(intent);
     }
 
     public void openDamc(View view){
         Intent intent = new Intent(this, universidad.class);
-        universidad.onActivityResult(5);
+        universidad.onActivityResult(2);
         startActivity(intent);
     }
 
