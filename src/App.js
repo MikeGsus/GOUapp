@@ -10,13 +10,14 @@ import {
   useParams
 } from 'react-router-dom'
 
+import { store, persistor } from './reducers/store'
 import logo from './logo.svg'
 import './App.css'
 
-function App() {
+function App () {
   return (
-    <Provider>
-      <PersistGate loading={null}>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
         <div className='App'>
           <header className='App-header'>
             <img src={logo} className='App-logo' alt='logo' />
