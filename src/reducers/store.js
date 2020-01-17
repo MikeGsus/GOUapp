@@ -11,8 +11,17 @@ import {
 } from 'redux-persist'
 
 import ui from './ui'
+import universities from './universities'
+import members from './members'
+import galery from './galery'
 
-const storageReducer = combineReducers({ ui })
+const storageReducer = combineReducers({
+  ui,
+  universities,
+  members,
+  galery
+})
+
 const persistConfig = {
   key: 'root',
   storage
