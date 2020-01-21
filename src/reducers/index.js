@@ -1,5 +1,6 @@
 import storage from 'redux-persist/lib/storage'
 import logger from 'redux-logger'
+import createSagaMiddleware from 'redux-saga'
 import {
   createStore,
   applyMiddleware,
@@ -15,6 +16,10 @@ import universities from './universities'
 import members from './members'
 import galery from './galery'
 
+import sagas from '../sagas'
+
+const sagaMiddleware = createSagaMiddleware()
+
 const storageReducer = combineReducers({
   ui,
   universities,
@@ -28,5 +33,10 @@ const persistConfig = {
 }
 const persistedReducer = persistReducer(persistConfig, storageReducer)
 
-export const store = createStore(persistedReducer, applyMiddleware(logger))
-export const persistor = persistStore(store)
+const store = createStore(persistedReducer, applyMiddleware(sagaMiddleware, logger))
+
+const persistor = persistStore(store)
+
+sagaMiddleware.run(sagas)
+
+export { store, persistor }

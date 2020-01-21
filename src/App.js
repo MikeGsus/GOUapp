@@ -10,7 +10,7 @@ import {
   useParams
 } from 'react-router-dom'
 
-import { store, persistor } from './reducers/store'
+import { store, persistor } from './reducers'
 import logo from './logo.svg'
 import './App.css'
 
