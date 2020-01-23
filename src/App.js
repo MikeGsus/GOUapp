@@ -20,13 +20,18 @@ import {
   Menu
 } from './components'
 
+import {
+  Wrapper
+} from './containers'
+
 function App () {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <IconApp logo={logo} />
+        { /* <IconApp logo={logo} />
         <Header />
-        <Menu />
+        <Menu /> */}
+        <Wrapper />
       </PersistGate>
     </Provider>
   )

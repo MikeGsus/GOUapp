@@ -3,7 +3,7 @@ import React from 'react'
 import {
   Icon,
   IconContainer
-}
+} from './styled'
 
 const IconApp = ({ logo }) => {
   return (
